@@ -1,0 +1,28 @@
+
+.drag_drop{
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+}
+
+
+.border-img{
+  padding: 1rem;
+  position: relative;
+  /* COVID */
+  /* background: linear-gradient(to right, rgb(253, 151, 153), rgb(255, 4, 38));  */
+  /* NEUMONIA: OK */
+  /* background: linear-gradient(to right, rgb(46, 155, 199), rgb(4, 21, 255));  */
+  /* NORMAL: OK */
+  /* background: linear-gradient(to right, rgb(109, 170, 101), rgb(4, 255, 12));  */
+
+  padding: 3px;
+
+}
+.container-result{
+    margin-bottom: 30px;
+}

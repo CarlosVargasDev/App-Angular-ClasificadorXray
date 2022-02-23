@@ -1,0 +1,26 @@
+<div class="body-request" #bodyRequest>
+    <div class="content" style="width: 80%; margin-left: 10%;">
+        <!-- <h5 class="card-title">Clasificador de radiografías de tórax para la detección de Covid</h5> -->
+        <h3>Clasificador de radiografías de tórax para la detección de Covid</h3> <br>
+            <p>
+                El clasificador alcanza una precisión superior al 95%, aunque es una precisión muy alta
+                este modelo no es lo suficientemente robusto como para ser empleado en un entorno médico real y
+                solo tiene fines didácticos.
+    
+                La aplicacion web se comunica con el servidor el cual contiene una API REST, que se encarga de recivir
+                la imagen y hacer el procesamiento para la clasificacion de la imagen, al final el servidor nos devuelve 
+                la respuesta.
+    
+            </p>
+    </div>  
+    <div class="container-img">
+        <img src="/assets/img1.png" alt="" width="50px">    
+        <img src="/assets/img2.png" alt="" width="50px">    
+        <img src="/assets/img3.png" alt="" width="50px">    
+    </div>
+    <!-- Drag and Drop -->
+    <dir style="width: 80%; margin-left: 10%;" >
+        <app-drag-and-drop></app-drag-and-drop>
+    </dir>
+</div>
+

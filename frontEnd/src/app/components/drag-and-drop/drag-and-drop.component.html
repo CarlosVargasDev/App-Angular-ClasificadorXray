@@ -1,0 +1,45 @@
+<!-- DragDrop -->
+<div class="container-drag" #dragDrop>
+  
+  <ngx-file-drop class="drag_drop" dropZoneLabel="Drop files here" 
+                 (onFileDrop)="dropped($event)" [multiple]="false"
+                 [directory]="false">
+
+      <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+        <div class="content">
+          <p>Por favor sube tu radiografía de tórax</p>
+          <div class="center">
+            <button type="button" class="btn btn-primary"(click)="openFileSelector()">Browse Files</button>
+          </div>
+        </div>
+      </ng-template>
+
+  </ngx-file-drop>
+</div>
+
+<!-- Spinner -->
+<div class="not-show" #spinner>
+  <div class="center">
+    <app-spinner [size]="'extra-large'"></app-spinner>
+  </div>
+</div>
+
+<br><br>
+<div class="not-show" #resultadoAPI>
+  <div class="card text-center" style="border-color: rgba(97,97,170,1);">
+    <div class="card-header" style="background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,97,170,1) 35%, rgba(0,212,255,1) 100%);
+    color: aliceblue;">
+      Resultado Clasificacion
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">El pronóstico es: {{pronostico | uppercase}}</h5>
+      <img width="350px" #img>
+      <br>
+      <br>
+      <p class="card-text">Este pronóstico no es 100% fiable, consulte a un médico especialista para obtener resultados más fiables.</p>
+      <button type="button" class="btn btn-primary" (click)="voverClasificar()">Clasificar otra radiografia</button>
+    </div>
+  </div>
+  <br><br>
+</div>
